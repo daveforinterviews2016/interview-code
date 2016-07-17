@@ -18,9 +18,4 @@ selenium-docker-test.py
   FFS=$(ps -e |grep firefox|cut -d" " -f1) ;if [ ${#FFS} -ne 0 ] ; \
   then killall firefox ; fi ; py.test -q -s selenium-docker-test.py::test_login
 
-
-database-example.sql
-  Development command line:
- 
-  -- remove old DBs, create new one and display query results
-  rm *db ; sqlite3 -column -header example.db < database-example.sql
+#EOF
